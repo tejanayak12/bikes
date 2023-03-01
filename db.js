@@ -16,3 +16,19 @@ const db = new sqlite.Database("./bikes.db",
 );
 
 module.exports = db;
+
+/*const sql = require("mysql");
+const connection = sql.createConnection({
+    host : "localhost",
+    user : "dbuser",
+    password : "teja@1234",
+    database : "bikes.db"
+});
+
+connection.connect();
+
+connection.query("SELECT * FROM bikes" , (err , rows) => {
+    if(err) throw err
+    console.log("the bikes was : " , rows[0].bikes)
+});
+connection.end()*/
